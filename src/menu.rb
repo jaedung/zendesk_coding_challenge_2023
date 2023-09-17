@@ -1,4 +1,3 @@
-require 'byebug'
 require 'terminal-table'
 
 require_relative 'constants'

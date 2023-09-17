@@ -10,7 +10,7 @@ class EntityFetcher
     results = @data[@entity_name.to_sym].select do |item|
       entity_value = item[@search_term]
 
-      if entity_value.is_a?(Array)
+      if entity_value.is_a?(Array) && entity_value.all? { |element| element.is_a?(String) }
         entity_value.include?(@search_value)
       else
         entity_value.to_s.downcase == @search_value.downcase.gsub("\"", '')
