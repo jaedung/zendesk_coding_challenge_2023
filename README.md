@@ -24,13 +24,13 @@ ruby src/app.rb
 bundle exec rspec
 ```
 
-### Assumptions
+## Assumptions
 
 - It only supports full value matching in every field (e.g. "mar" won't return "mary").
 
 ## Libraries
 
-This is a list of libraries that are used.
+These are the libraries that are required to run this application.
 
 - tty-prompt
 - terminal-table
